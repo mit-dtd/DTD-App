@@ -4,8 +4,7 @@
 dtd.ctr.loginController={};
 dtd.ctr.loginController.setuploginWindow=function(){
 	dtd.ui.login.win && dtd.ui.login.win.close();
-	dtd.ui.login.createloginWindow();
-	dtd.ui.login.win.open();
+    dtd.ui.login.createloginWindow();
 	dtd.ui.login.goButton.addEventListener("click", function() {
 		
 		var username_e = escape(dtd.ui.login.userNameTextField.value);
@@ -23,7 +22,8 @@ dtd.ctr.loginController.setuploginWindow=function(){
         var loginError = function() {
         	alert("Login error.");
         	dtd.ui.login.goButton.enabled = true;
-        }
+            dtd.ui.login.win.open();
+        };
         http.setTimeout(2e4);
         http.onerror = function() {
             return loginError();
@@ -52,5 +52,8 @@ dtd.ctr.loginController.setuploginWindow=function(){
 	if (Ti.App.Properties.hasProperty('dtduser') && (Ti.App.Properties.hasProperty('dtdpass'))) {
 		dtd.ui.login.sendLoginInformation(Ti.App.Properties.getString('dtduser'), Ti.App.Properties.getString('dtdpass'));
 	}
-}
+	else {
+        dtd.ui.login.win.open();
+	}
+};
 

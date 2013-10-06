@@ -10,5 +10,5 @@ dtd.ctr.homeWindow.setupHomeWindow = function(){
         dtd.ctr.menuWindow.setupmenuWindow();
         dtd.ui.homeWindow.win.close();
     });
-}
+};
 

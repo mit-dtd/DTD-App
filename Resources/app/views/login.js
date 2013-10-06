@@ -33,4 +33,4 @@ dtd.ui.login.createloginWindow=function(){
 	dtd.ui.login.win.add(dtd.ui.login.userNameTextField);
 	dtd.ui.login.win.add(dtd.ui.login.passwordTextField);
 	dtd.ui.login.win.add(dtd.ui.login.goButton);
-}
+};
