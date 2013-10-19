@@ -22,7 +22,9 @@ dtd.ui.login.createloginWindow=function(){
 		backgroundColor:"White",
 		top: dtd.len.longerDim.p450,
 		height: dtd.len.longerDim.p100,
-		width: dtd.len.shorterDim.p400
+		width: dtd.len.shorterDim.p400,
+		passwordMask: true,
+        autocorrect: false
 	});
 	dtd.ui.login.goButton=Titanium.UI.createButton({
 		top:dtd.len.longerDim.p600,

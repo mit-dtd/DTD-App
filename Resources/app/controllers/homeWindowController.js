@@ -8,7 +8,7 @@ dtd.ctr.homeWindow.setupHomeWindow = function(){
 	
 	dtd.ui.homeWindow.menuButton.addEventListener("click", function() {
         dtd.ctr.menuWindow.setupmenuWindow();
-        dtd.ui.homeWindow.win.close();
+        //dtd.ui.homeWindow.win.close();
     });
 };
 

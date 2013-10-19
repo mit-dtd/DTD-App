@@ -4,7 +4,7 @@
 dtd.ctr.menuWindow={};
 dtd.ctr.menuWindow.setupmenuWindow=function(){
 	dtd.ui.menuWindow.createmenuWindow();
-	dtd.ui.menuWindow.win.open();
+	
 
 	var menu=SERVER+"?q=menu&op=list";
     
@@ -38,5 +38,17 @@ dtd.ctr.menuWindow.setupmenuWindow=function(){
     http.open("GET", menu);
     http.send();
     Titanium.API.info("GET request made");
+    
+    /*dtd.ui.menuWindow.menuWindowBackButton.addEventListener("click", function() {
+		dtd.ctr.homeWindow.setupHomeWindow();
+		dtd.ui.homeWindow.win.close();
+    });
+    */
+    dtd.ui.menuWindow.win.addEventListener('android:back', function(){
+    	dtd.ctr.homeWindow.setupHomeWindow();
+		//dtd.ui.menuWindow.win.close();
+	});
+    dtd.ui.menuWindow.win.open();
+
 };
 
