@@ -13,7 +13,7 @@ dtd.ctr.homeWindow.setupHomeWindow = function(){
 
     dtd.ui.homeWindow.brohoodButton.addEventListener("click", function() {
     	dtd.ctr.brohoodWindow.setupbrohoodWindow();
-    	dtd.ui.homeWindow.win.close();
+    	//dtd.ui.homeWindow.win.close();
     });
 };
 

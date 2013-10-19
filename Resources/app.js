@@ -41,10 +41,11 @@ for (var i = 1; 1000 >= i; i++) {
 Titanium.include("app/controllers/homeWindowController.js");
 Titanium.include("app/views/homeWindow.js");
 Titanium.include("app/controllers/loginController.js");
-Titanium.include("app/views/login.js")
+Titanium.include("app/views/login.js");
 Titanium.include("app/controllers/menuWindowController.js");
 Titanium.include("app/views/menuWindow.js");
-
+Titanium.include("app/controllers/brohoodWindowController.js");
+Titanium.include("app/views/brohoodWindow.js");
 
 
 
