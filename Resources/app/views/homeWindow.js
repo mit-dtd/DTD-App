@@ -29,14 +29,14 @@ dtd.ui.homeWindow.createhomeWindow= function(){
 		left: dtd.len.shorterDim.p100,
 		top:dtd.len.longerDim.p300,
 		width: dtd.len.shorterDim.p300,
-		height: dtd.len.longerDim.p100
+		height: dtd.len.longerDim.p120
 	});
 	dtd.ui.homeWindow.calendarButton=Titanium.UI.createButton({
 		title: "Calendar",
 		left: dtd.len.shorterDim.p600,
 		top:dtd.len.longerDim.p300,
 		width: dtd.len.shorterDim.p300,
-		height: dtd.len.longerDim.p100
+		height: dtd.len.longerDim.p120
 
 
 	});
@@ -45,13 +45,19 @@ dtd.ui.homeWindow.createhomeWindow= function(){
 		left: dtd.len.shorterDim.p100,
 		top:dtd.len.longerDim.p500,
 		width: dtd.len.shorterDim.p300,
-		height: dtd.len.longerDim.p100
-
-
+		height: dtd.len.longerDim.p120
+	});
+	dtd.ui.homeWindow.brohoodButton=Titanium.UI.createButton({
+		title: "Brohood points",
+		left: dtd.len.shorterDim.p600,
+		top:dtd.len.longerDim.p500,
+		width: dtd.len.shorterDim.p300,
+		height: dtd.len.longerDim.p120
 	});
 	dtd.ui.homeWindow.win.add(dtd.ui.homeWindow.titleView);
 	dtd.ui.homeWindow.win.add(dtd.ui.homeWindow.menuButton);
 	dtd.ui.homeWindow.win.add(dtd.ui.homeWindow.calendarButton);
 	dtd.ui.homeWindow.win.add(dtd.ui.homeWindow.dutySheetButton);
+	dtd.ui.homeWindow.win.add(dtd.ui.homeWindow.brohoodButton);
 	
 };

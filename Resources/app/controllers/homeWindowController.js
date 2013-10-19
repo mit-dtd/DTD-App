@@ -10,5 +10,10 @@ dtd.ctr.homeWindow.setupHomeWindow = function(){
         dtd.ctr.menuWindow.setupmenuWindow();
         dtd.ui.homeWindow.win.close();
     });
+
+    dtd.ui.homeWindow.brohoodButton.addEventListener("click", function() {
+    	dtd.ctr.brohoodWindow.setupbrohoodWindow();
+    	dtd.ui.homeWindow.win.close();
+    });
 };
 
