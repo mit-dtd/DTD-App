@@ -5,13 +5,27 @@ dtd.ui.menuWindow={};
 dtd.ui.menuWindow.createmenuWindow=function(){
 	dtd.ui.menuWindow.win=Titanium.UI.createWindow({
 		title:"Menu",
-		backgroundColor:"white"
+		backgroundColor:"white",
+		navBarHidden: true,
+		navBarHidden: false,
+        exitOnClose: false,
+        fullscreen: true,
+        orientationModes: [ Ti.UI.PORTRAIT ]
 	});
 	dtd.ui.menuWindow.menuWindowScrollView=Titanium.UI.createScrollView({
 		top: dtd.len.longerDim.p0,
 		backgroundColor:"black"
 	});
+	/*
+	dtd.ui.menuWindow.menuWindowBackButton=Titanium.UI.createButton({
+		top: dtd.len.longerDim.p900,
+		height: dtd.len.longerDim.p100,
+		width: dtd.len.shorterDim.p500,
+		title:"Back"
+	})
+	*/
 	dtd.ui.menuWindow.win.add(dtd.ui.menuWindow.menuWindowScrollView);
+	//dtd.ui.menuWindow.win.add(dtd.ui.menuWindow.menuWindowBackButton);
 	
 };
 

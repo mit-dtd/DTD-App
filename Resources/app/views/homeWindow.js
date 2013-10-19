@@ -10,8 +10,11 @@ dtd.ui.homeWindow.createhomeWindow= function(){
         startPoint: { x: '50%', y: '0%' },
         endPoint: { x: '50%', y: '100%' },
         colors: [ { color: '#ffd700', offset: 0.0}, { color: 'white', offset: 0.2 } ],
+        navBarHidden: false,
+        exitOnClose: false,
+        fullscreen: true,
+        orientationModes: [ Ti.UI.PORTRAIT ]
    },
-		orientationModes: [ Ti.UI.PORTRAIT ]
 		
 	
 	});
